@@ -1,0 +1,45 @@
+/* Reset và thiết lập body */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Định dạng bảng --- */
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* --- Hiệu ứng Ngựa vằn --- */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* --- Hiệu ứng Hover --- */
+tbody tr:hover {
+  background-color: #e2e2e2;
+}
